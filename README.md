@@ -1,6 +1,6 @@
 <h1> Intro </h1>
 
-I'm a beginner who likes to test stuff out.</br> Feel free to suggest better solutions, practicies to my projects. 
+I'm a beginner who likes to test stuff out.</br> Feel free to suggest better solutions, practices to my projects. 
 
 <h3>Projects</h3>
 <ul>
