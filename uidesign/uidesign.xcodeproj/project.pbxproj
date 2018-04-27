@@ -53,6 +53,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		915F34E22092887D006C527C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91C14065203CB0C100F964C3 /* Card.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9162C3C1203C6B5800095F80 = {
 			isa = PBXGroup;
 			children = (
@@ -74,7 +82,7 @@
 		9162C3CC203C6B5800095F80 /* uidesign */ = {
 			isa = PBXGroup;
 			children = (
-				91C14065203CB0C100F964C3 /* Card.swift */,
+				915F34E22092887D006C527C /* View */,
 				9162C3CD203C6B5800095F80 /* AppDelegate.swift */,
 				9162C3D1203C6B5800095F80 /* Main.storyboard */,
 				9162C3CF203C6B5800095F80 /* ViewController.swift */,

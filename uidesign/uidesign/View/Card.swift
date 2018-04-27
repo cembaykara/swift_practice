@@ -11,20 +11,21 @@ import PureLayout
 
 class Card: UICollectionViewCell {
 
-    let height = (UIScreen.main.bounds.height) / 7.2
+    let height = (UIScreen.main.bounds.height) / 7.5
     
     let header : UILabel = {
         let label = UILabel()
         label.textAlignment = NSTextAlignment.left
-        label.sizeToFit()
-        label.textColor = UIColor.darkGrey
+        label.adjustsFontSizeToFitWidth = true
+        label.textColor = UIColor.customGray.darkGray
         return label
     }()
     
     let distance : UILabel = {
         let label = UILabel()
-        label.sizeToFit()
-        label.textColor = UIColor.lightGrey
+        label.adjustsFontSizeToFitWidth = true;
+        label.numberOfLines = 0;
+        label.textColor = UIColor.customGray.lightGray
         return label
     }()
     
@@ -44,7 +45,7 @@ class Card: UICollectionViewCell {
         super.init(frame: frame)
         
         self.autoSetDimension(.height, toSize: height)
-        header.autoSetDimension(.height, toSize: height / 5)
+        header.autoSetDimension(.height, toSize: height / 6)
         distance.autoSetDimension(.height, toSize: height / 6)
         
         drawView()
@@ -92,10 +93,10 @@ class Card: UICollectionViewCell {
     
     // FIXME: Fix this function sometmie
     private func drawView() {
-        self.backgroundColor = UIColor(displayP3Red: 254/255, green: 254/255, blue: 254/255, alpha: 1.0) //fefefe
+        self.backgroundColor = UIColor.customBackground.backgroundWhite
         layer.shadowOffset = CGSize(width: 0, height: -3)
         layer.shadowRadius = 5
-        layer.cornerRadius = 16
+        layer.cornerRadius = 8
         layer.shadowOpacity = 0.2
     }
     
