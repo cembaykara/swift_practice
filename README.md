@@ -1,9 +1,11 @@
 <h1> Intro </h1>
 
-I'm a beginner who likes to test stuff out.</br> Feel free to suggest better solutions, practices to my projects. 
+This is my playground area. </br>Feel free to suggest better solutions, practices to my projects. 
 
 <h3>Projects</h3>
 <ul>
-<li>uidesign</li>
+<li><h6>uidesign</h3></li>
 Where I experiment with custom cell's and programatic auto-layout with <a href = "https://github.com/PureLayout/PureLayout">PureLayout</a>
+<li><h6>SocialButton</h3></li>
+Creates a custom UIButton
 </ul>
