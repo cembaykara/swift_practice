@@ -2,8 +2,9 @@
 
 This creates  a custom UIButton with given social network. Depends on <a href = "https://github.com/PureLayout/PureLayout">PureLayout</a>
 
-![Screenshot](https://github.com/cembaykara/swift_practice/blob/master/SocialButton/screenshot.png?raw=true){:height= "25%" width= "25%"}
-
+<p align="center">
+<img src="https://github.com/cembaykara/swift_practice/blob/master/SocialButton/screenshot.png?raw=true" width="35%" title="Screenshot">
+</p>
 
 <h3>Usage</h3>
 ```swift
