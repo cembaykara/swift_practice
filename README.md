@@ -9,6 +9,11 @@ Where I experiment with custom cell's and programatic auto-layout with <a href =
 <li><h6>SocialButton</h3></li>
 Creates a custom UIButton
 <p align="center">
-<img src="https://github.com/cembaykara/swift_practice/blob/master/SocialButton/screenshot.png?raw=true" width="35%" title="Screenshot">
+<img src="https://github.com/cembaykara/swift_practice/blob/master/SocialButton/screenshot.png?raw=true" width="25%" title="Screenshot">
+</p>
+<li><h6>Magic Ball</h3></li>
+Magic 8 Ball game.
+<p align="center">
+<img src="https://github.com/cembaykara/swift_practice/blob/master/Magic%20Ball/Screenshot.jpeg?raw=true" width="25%" title="Screenshot">
 </p>
 </ul>
