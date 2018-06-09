@@ -21,7 +21,7 @@ Very first AR app that I developed when ARKit was first introduced.<br>
 Utilizes ARKit 1.0.<br><br>
 Spawns a 3d cross-section of a place in AR and adds clouds to it using particles.<br>
 
-Map overlay is from google maps and the depth map is from Tizen heightmapper (shutdown?).
+Map overlay is from google maps and the depth map is from Tangrams heightmapper (shutdown?).
 <li><h6>RunMe -- Ongoing development</h3></li>
 <p align="center">
 <img src="https://github.com/cembaykara/swift_practice/blob/master/RunMe/Screenshot.png?raw=true" width="35%" title="Screenshot">
