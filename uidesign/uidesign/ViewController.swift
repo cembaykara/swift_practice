@@ -55,9 +55,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         colorSets.append([UIColor.gradientOrange.firstColor.cgColor, UIColor.gradientOrange.secondColor.cgColor])
         colorSets.append([UIColor.gradientBlue.firstColor.cgColor, UIColor.gradientBlue.secondColor.cgColor])
         
-        gradientBackground.startPoint = CGPoint(x: 1.0, y: 0.0)
+        gradientBackground.startPoint =  CGPoint(x: 1.0, y: 0.0)
         gradientBackground.endPoint = CGPoint(x: 0.0, y: 1.0)
-        
+
         gradientBackground.colors = colorSets[0]
         
         self.view.layer.addSublayer(gradientBackground)
@@ -74,7 +74,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let visibleIndexPath: IndexPath? = containerView.indexPathForItem(at: visiblePoint)
         
         guard let indexPath = visibleIndexPath else { return }
-        //containerView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
         collectionView(containerView, didSelectItemAt: indexPath)
     }
     
@@ -101,18 +100,22 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return cell
     }
     
+    var currentColorSet = 0
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         containerView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         
         if (indexPath.item < 2) {
-            gradientBackground.colors = colorSets[indexPath.item]
+            currentColorSet = indexPath.item
+            gradientBackground.colors = colorSets[currentColorSet]
         }else {
-            gradientBackground.colors = colorSets[0]
+            currentColorSet = 0
+            gradientBackground.colors = colorSets[currentColorSet]
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width-64, height: newView.height)
     }
+    
 }
 
